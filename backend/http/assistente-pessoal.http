@@ -3,5 +3,5 @@ Content-Type: application/json
 
 {
   "chatId": 1234567,
-  "mensagem": "Quais projetos ele utilizou esta tecnologia?"
+  "mensagem": "Certo, agora quem é o presidente do Brasil?"
 }
