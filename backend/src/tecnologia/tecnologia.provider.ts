@@ -7,11 +7,15 @@ export class TecnologiaProvider {
 	constructor(private readonly prisma: PrismaProvider) {}
 
 	async findAll(): Promise<Tecnologia[]> {
-		return this.prisma.tecnologia.findMany()
+		return await this.prisma.tecnologia.findMany({
+			orderBy: {
+				nome: "asc",
+			},
+		})
 	}
 
 	async findAllEmphasis(): Promise<Tecnologia[]> {
-		return this.prisma.tecnologia.findMany({
+		return await this.prisma.tecnologia.findMany({
 			where: {
 				destaque: true,
 			},
