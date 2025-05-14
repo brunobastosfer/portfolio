@@ -14,6 +14,14 @@ export class ProjectProvider {
 			where: { id },
 			select: {
 				tecnologias: true,
+				repositorio: true,
+				descricao: true,
+				imagens: true,
+				destaque: true,
+				id: true,
+				nivel: true,
+				nome: true,
+				tipo: true,
 			},
 		})
 	}

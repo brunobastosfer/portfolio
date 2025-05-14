@@ -22,5 +22,6 @@ export async function obterProjetos() {
 }
 
 export async function obterProjeto(id: string): Promise<Projeto | null> {
-  return await HttpGet(`/projetos/${id}`)
+  const projeto = await HttpGet(`/projetos/${id}`)
+  return projeto;
 }
